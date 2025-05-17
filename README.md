@@ -5,7 +5,7 @@ I used the tuorial on viewsourcecode.org.
 
 ## Current progress
 
-- 54 of 184 steps (35.32%)
+- 54 of 184 steps (45.65%)
 
 ## Resources
 
