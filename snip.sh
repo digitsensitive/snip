@@ -1,2 +1,2 @@
 #!/bin/bash
-nano Makefile src/* README.md
+nano include/* src/*
