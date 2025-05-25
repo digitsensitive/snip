@@ -34,8 +34,8 @@ void print_termios_flags(struct termios *term) {
   printf("ONLRET: %s.\n", (term->c_oflag & ONLRET) ? "ON" : "OFF");
   printf("OFDEL: %s.\n", (term->c_oflag & OFDEL) ? "ON" : "OFF");
   printf("OFILL: %s.\n", (term->c_oflag & OFILL) ? "ON" : "OFF");
- 	// TODO: Reports error as "undeclared"
-	// printf("NLDLY: %s.\n", (term->c_oflag & NLDLY) ? "ON" : "OFF");
+  // TODO: Reports error as "undeclared"
+  // printf("NLDLY: %s.\n", (term->c_oflag & NLDLY) ? "ON" : "OFF");
   // printf("CRDLY: %s.\n", (term->c_oflag & CRDLY) ? "ON" : "OFF");
   // printf("TABDLY: %s.\n", (term->c_oflag & TABDLY) ? "ON" : "OFF");
   // printf("BSDLY: %s.\n", (term->c_oflag & BSDLY) ? "ON" : "OFF");
@@ -69,7 +69,7 @@ void print_termios_flags(struct termios *term) {
 void enable_raw_mode() {
   // Get terminal parameters and store them into a termios structure
   if (tcgetattr(STDIN_FILENO, &terminal.orig_termios) == -1) {
-  	die("tcgetattr");
+    die("tcgetattr");
   }
 
   // Put original termios parameters into ram termios
